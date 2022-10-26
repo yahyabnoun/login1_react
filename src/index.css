@@ -1,0 +1,57 @@
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ }
+ body{
+  background-color: #0d1117;
+  font-family: 'Poppins'; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+.App{
+
+  color: white;
+  margin: auto;
+  height: 400px;
+  width: 450px;
+  background-color: #161b22;
+  border-radius: 7px;
+  padding: 30px;
+  
+}
+.App div p{
+  font-size: 20px;
+}
+.App div{
+  margin: 20px 0px;
+}
+.App div label{
+  opacity: 0.5;
+}
+.App div input[type='text'],
+.App button{
+  width: 100%;
+  padding: 7px 0px;
+  margin-top: 15px;
+}
+
+.App button{
+  background-color: #6BF549;
+  border: 0px ;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #161b22;
+}
+
+
+
+
+
+
+
+
+
