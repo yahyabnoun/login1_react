@@ -18,6 +18,10 @@ function Sign_in() {
             <label>confirm your password</label>
             <input type={"text"}></input>
           </div>
+          <span>
+          <a className="a_Sign_in" href='/LOGIN'>LOGIN</a>
+
+          </span>
           <button>Sign in</button>
         </div>
     );
