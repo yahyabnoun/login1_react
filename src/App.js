@@ -6,7 +6,6 @@ import Sign_in from "./Sign_in";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -23,6 +22,7 @@ const router = createBrowserRouter([
     element: <Sign_in/>,
   },
 ]);
+
 
 
 function App() {

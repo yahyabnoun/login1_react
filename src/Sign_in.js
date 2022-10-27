@@ -1,6 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Validation from './Validation'
 
+
+function Sign_in_valid() {
+
+if (Validation()) {
+  
+  alert('valide')
+}else{
+  alert('invalide')
+}
+  
+}
 
 function Sign_in() {
     return (
@@ -24,7 +36,7 @@ function Sign_in() {
           <Link className="a_SignIn_LOGIN" to='/LOGIN'>Login</Link>
 
           </span>
-          <button>Sign in</button>
+          <button onClick={Sign_in_valid}>Sign in</button>
         </div>
     );
   }
