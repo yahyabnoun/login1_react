@@ -2,9 +2,10 @@ import React from "react";
 import {Link} from "react-router-dom";
 import Validation from './Validation'
 
+///////////////////////////////////////////////////////
 
 
-function saveLocalTodos(Account) {
+function saveAccounts(Account) {
   //CHECK --- HEY DO I already have thing in there?
   let Accounts
   if (localStorage.getItem('Accounts')===null) {
@@ -17,20 +18,33 @@ function saveLocalTodos(Account) {
   Accounts.push(Account)
   localStorage.setItem('Accounts',JSON.stringify(Accounts))
 }
+
 ///////////////////////////////////////////////////////
+
 function Sign_in_valid() {
 
 if (Validation()) {
-  
-  saveLocalTodos({
-    name:document.querySelectorAll('input')[0].value,
-    passeword:document.querySelectorAll('input')[1].value
+const input1=document.querySelectorAll('input')[0].value
+const input2=document.querySelectorAll('input')[1].value
+
+const Accounts=JSON.parse(localStorage.getItem('Accounts'))||"[]"
+
+const test =Accounts.filter((el)=>  el.name===input1  )
+ if (test.length<0) {
+  saveAccounts({
+    name:input1,
+    passeword:input2
   })
+ }else{
+  alert('this Account created')
+ }
+
 }else{
   alert('invalide')
 }
   
 }
+///////////////////////////////////////////////////////
 
 function Sign_in() {
     return (
