@@ -10,8 +10,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width:100vw ;
  }
-.App{
+.main{
 
   color: white;
   margin: auto;
@@ -20,38 +21,47 @@
   background-color: #161b22;
   border-radius: 7px;
   padding: 30px;
-  
+  box-shadow:  0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-.App div p{
-  font-size: 20px;
+.main div h2{
+  text-align: center;
 }
-.App div{
+.main div label{
+opacity: 0.5;
+}
+.main div{
   margin: 20px 0px;
 }
-.App div label{
-  opacity: 0.5;
-}
-.App div input[type='text'],
-.App button{
+
+.main div input[type='text'],
+.main button{
   width: 100%;
   padding: 7px 0px;
-  margin-top: 15px;
+  margin: 15px 0;
 }
-
-.App button{
-  background-color: #6BF549;
+.main div input[type='text']{
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: white;
+  /* background-color:  rgb(216, 216, 216); */
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  /* border-bottom: 2px solid black ; */
+}
+.main button{
+  background-color: wheat;
   border: 0px ;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 700;
   color: #161b22;
+  transition: 0.5s all ease;
 }
-
-
-
-
-
-
-
+.main button:hover{
+  background-color: #363b42;
+  color: wheat;
+}
 
 
