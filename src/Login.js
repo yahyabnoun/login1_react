@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 function Login() {
     return (
@@ -15,8 +17,8 @@ function Login() {
             <input type={"text"}></input>
           </div>
           <span>
-          <a href=''>forgot password ?</a>
-          <a className="a_Sign_in" href='/Sign_in'>Créer un compte</a>
+          <Link to=''>forgot password ?</Link>
+          <Link className="a_SignIn_LOGIN" to='/Sign_in'>Créer un compte</Link>
 
           </span>
 

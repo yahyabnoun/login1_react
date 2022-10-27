@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 function Sign_in() {
     return (
@@ -19,7 +21,7 @@ function Sign_in() {
             <input type={"text"}></input>
           </div>
           <span>
-          <a className="a_Sign_in" href='/LOGIN'>LOGIN</a>
+          <Link className="a_SignIn_LOGIN" to='/LOGIN'>Login</Link>
 
           </span>
           <button>Sign in</button>
