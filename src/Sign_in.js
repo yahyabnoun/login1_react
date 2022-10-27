@@ -1,10 +1,10 @@
 import React from "react";
 
-function Login() {
+function Sign_in() {
     return (
         <div className="main">
           <div>
-            <h2>LOGIN</h2>
+            <h2>Sign in</h2>
           </div>
           <div>
             <label>User Name </label>
@@ -14,15 +14,12 @@ function Login() {
             <label>Password</label>
             <input type={"text"}></input>
           </div>
-          <span>
-          <a href=''>forgot password ?</a>
-          <a  href='/Sign_in'>Sign in</a>
-
-          </span>
-
-          <button>LOGIN</button>
+          <div>
+            <label>confirm your password</label>
+            <input type={"text"}></input>
+          </div>
+          <button>Sign in</button>
         </div>
     );
   }
-  
-  export default Login;
+  export default Sign_in;
