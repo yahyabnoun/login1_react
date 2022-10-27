@@ -29,15 +29,26 @@ const input2=document.querySelectorAll('input')[1].value
 
 const Accounts=JSON.parse(localStorage.getItem('Accounts'))||"[]"
 
-const test =Accounts.filter((el)=>  el.name===input1  )
- if (test.length<0) {
+if (Accounts.length>0) {
+  for (let index = 0; index < Accounts.length; index++) {
+      if (Accounts[index].name===input1) {
+        alert('Sign in insuccessfully!')
+
+        return
+      }
+      
+  }
   saveAccounts({
     name:input1,
     passeword:input2
   })
- }else{
-  alert('this Account created')
- }
+  alert('Sign in successfully!')
+
+  
+}
+
+
+ 
 
 }else{
   alert('invalide')
